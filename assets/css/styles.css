@@ -72,59 +72,6 @@ h6 {
     font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages */
-
-.php-email-form .error-message {
-    display: none;
-    background: #df1529;
-    color: #ffffff;
-    text-align: left;
-    padding: 15px;
-    margin-bottom: 24px;
-    font-weight: 600;
-}
-
-.php-email-form .sent-message {
-    display: none;
-    color: #ffffff;
-    background: #059652;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 24px;
-    font-weight: 600;
-}
-
-.php-email-form .loading {
-    display: none;
-    background: var(--surface-color);
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid var(--accent-color);
-    border-top-color: var(--surface-color);
-    animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
 /* Header */
 
 .header {
@@ -164,10 +111,8 @@ h6 {
     --background-color: #10058c;
 }
 
-/*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
-/* Desktop Navigation */
+/* Nav Desktop */
+
 @media (min-width: 1200px) {
     .navmenu {
         padding: 0;
@@ -425,9 +370,8 @@ h6 {
     }
 }
 
-/*--------------------------------------------------------------
-  # Global Footer
-  --------------------------------------------------------------*/
+/* global footer */
+
 .footer {
     color: var(--default-color);
     background-color: var(--background-color);
@@ -586,9 +530,8 @@ h6 {
     font-size: 13px;
 }
 
-/*--------------------------------------------------------------
-  # Preloader
-  --------------------------------------------------------------*/
+/* Preloader */
+
 #preloader {
     position: fixed;
     inset: 0;
@@ -621,9 +564,9 @@ h6 {
     }
 }
 
-/*--------------------------------------------------------------
-  # Scroll Top Button
-  --------------------------------------------------------------*/
+
+/* Scroll Top Button */
+
 .scroll-top {
     position: fixed;
     visibility: hidden;
@@ -654,18 +597,18 @@ h6 {
     opacity: 1;
 }
 
-/*--------------------------------------------------------------
-  # Disable aos animation delay on mobile devices
-  --------------------------------------------------------------*/
+
+  /* Disable aos  on mobile */
+
 @media screen and (max-width: 768px) {
     [data-aos-delay] {
         transition-delay: 0 !important;
     }
 }
 
-/*--------------------------------------------------------------
-  # Global Page Titles & Breadcrumbs
-  --------------------------------------------------------------*/
+
+ /* Page Titles & Breadcrumbs */
+
 .page-title {
     color: var(--default-color);
     background-color: var(--background-color);
@@ -707,9 +650,8 @@ h6 {
     color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-/*--------------------------------------------------------------
-  # Global Sections
-  --------------------------------------------------------------*/
+/* Global Sections */
+
 section,
 .section {
     color: var(--default-color);
@@ -727,9 +669,9 @@ section,
     }
 }
 
-/*--------------------------------------------------------------
-  # Global Section Titles
-  --------------------------------------------------------------*/
+
+/* Global Section Titles */
+
 .section-title {
     padding-bottom: 60px;
     position: relative;
@@ -766,9 +708,8 @@ section,
     font-family: var(--heading-font);
 }
 
-/*--------------------------------------------------------------
-  # Hero Section
-  --------------------------------------------------------------*/
+/* Hero Section */
+
 .hero {
     width: 100%;
     min-height: 70vh;
@@ -958,9 +899,9 @@ section,
     }
 }
 
-/*--------------------------------------------------------------
-  # About Section
-  --------------------------------------------------------------*/
+
+/* About Section */
+
 .about {
     padding-top: 100px;
 }
@@ -1066,9 +1007,9 @@ section,
     }
 }
 
-/*--------------------------------------------------------------
-  # Features Section
-  --------------------------------------------------------------*/
+
+/* Features Section */
+
 .features .features-item {
     background-color: var(--surface-color);
     display: flex;
@@ -1106,9 +1047,8 @@ section,
     color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-  # Stats Section
-  --------------------------------------------------------------*/
+/* Stats Section */
+
 .stats i {
     background-color: var(--surface-color);
     color: var(--accent-color);
@@ -1151,9 +1091,8 @@ section,
     font-size: 16px;
 }
 
-/*--------------------------------------------------------------
-  # Details Section
-  --------------------------------------------------------------*/
+ /* Details Section */
+
 .details .features-item {
     color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
@@ -1198,9 +1137,8 @@ section,
     margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-  # Gallery Section
-  --------------------------------------------------------------*/
+/* Gallery Section */
+
 .gallery .gallery-item {
     overflow: hidden;
     border-right: 3px solid var(--background-color);
@@ -1215,9 +1153,8 @@ section,
     transform: scale(1.1);
 }
 
-/*--------------------------------------------------------------
-  # Testimonials Section
-  --------------------------------------------------------------*/
+/* Testimonials Section */
+
 .testimonials {
     padding: 80px 0;
     position: relative;
